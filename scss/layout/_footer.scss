@@ -1,0 +1,123 @@
+#footer {
+    background-color: #000;
+    width: 100%;
+    display: block;
+    padding: 2rem 0;
+    background-image: url("../images/footer asset.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .logo {
+            width: 14rem;
+
+            img {
+                width: 100%;
+                height: auto;
+                padding: 2rem;
+            }
+        }
+
+        address {
+            padding-top: 2rem;
+
+            p {
+                color: $white;
+                padding: 0;
+
+                &:nth-child(3) {
+                    padding-bottom: 1rem;
+                }
+            }
+
+            a {
+                color: $gold;
+                font-size: 1.8rem;
+            }
+
+        }
+
+        nav {
+            padding: 2rem;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .social-row {
+            padding: 2rem;
+
+            a {
+                height: 5rem;
+                width: 5rem;
+                background-position: center;
+
+                background-repeat: no-repeat;
+                border: solid 0.2rem $gold;
+                display: inline-block;
+                margin-right: 2rem;
+
+                &.facebook {
+                    background-image: url("../images/facebook.svg");
+                    background-position: bottom;
+                    background-size: 45%;
+                }
+
+                &.instagram {
+                    background-image: url("../images/insta.svg");
+                    background-size: 75%;
+                }
+            }
+        }
+
+        #bottom_bar {
+            width: 100%;
+            border-top: 0.1rem solid $gold;
+            margin-top: 2rem;
+            padding-top: 0.5rem;
+
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 1.4rem;
+                color: white;
+                margin: 0;
+
+                a {
+                    font-size: inherit;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

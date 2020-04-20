@@ -1,0 +1,92 @@
+#header {
+    background-color: #000;
+    width: 100%;
+    display: block;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 3;
+
+    &.homepage {
+        position: relative;
+    }
+
+    .content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            width: 14rem;
+            padding: 1rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        nav {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+
+                li {
+                    display: ruby;
+                    padding: 1rem;
+
+                    a {
+                        font-size: 2rem;
+                        color: $white;
+                        text-decoration: none;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: $gold;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-row {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+
+            a {
+                height: 5rem;
+                width: 5rem;
+                background-position: center;
+
+                background-repeat: no-repeat;
+                border: solid 0.2rem $gold;
+                display: inline-block;
+                margin-right: 2rem;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: darken($gold, 30%);
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &.facebook {
+                    background-image: url("../images/facebook.svg");
+                    background-position: bottom;
+                    background-size: 45%;
+                }
+
+                &.instagram {
+                    background-image: url("../images/insta.svg");
+                    background-size: 75%;
+                }
+            }
+        }
+    }
+}

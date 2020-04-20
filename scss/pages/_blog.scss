@@ -1,0 +1,25 @@
+#blog_archive,
+#blog_tag_page,
+#blog_category_page {
+    padding: 8rem 0;
+}
+
+#single_blog_post {
+    padding: 8rem 0;
+
+    #post_content {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #lastest_posts {
+        padding-top: 8rem;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+    }
+}

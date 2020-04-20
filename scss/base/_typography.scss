@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: $h1-font;
+    padding: $h1-padding;
+    color: $black;
+    font-family: $family;
+}
+
+h2 {
+    font-size: 4rem;
+    padding: $p-padding;
+    color: $black;
+    font-family: $family;
+}
+
+h3 {
+    font-size: 3rem;
+    padding: $p-padding;
+    color: $black;
+    font-family: $family;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: $p-padding;
+    color: $black;
+    font-family: $family;
+}
+
+h5 {
+    font-size: 1rem;
+    padding: $p-padding;
+    color: $black;
+    font-family: $family;
+}
+
+p {
+    font-size: $p-font;
+    padding: $p-padding;
+    color: $black;
+    font-family: $family;
+
+    &.bold {
+        font-weight: $p-bold;
+    }
+
+    &.gold-background {
+        background-color: $gold;
+        color: $white;
+    }
+}
+
+a {
+    font-family: $family;
+}
+
+%orpheus-i {
+    font-family: orpheuspro, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+%orpheus-b {
+    font-family: orpheuspro, serif;
+    font-weight: 700;
+    font-style: normal;
+}

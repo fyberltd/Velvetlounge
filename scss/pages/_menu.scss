@@ -1,0 +1,347 @@
+#menu_page {
+    /*padding: 6rem 0; */
+    background-color: $dark-grey;
+
+    .row {
+        margin: 0;
+    }
+
+
+
+    #food-links {
+        background-color: $gold;
+
+
+        &.sticky {
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            top: 0;
+        }
+
+        .quicklinks {
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            flex-wrap: wrap;
+            align-items: center;
+
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+
+            li {
+                font-size: 1.8rem;
+                color: $gold;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.3rem;
+                    margin: 0 .5rem;
+                }
+
+                &.active {
+                    color: $gold;
+                }
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #food_menu {
+        position: relative;
+        padding-bottom: 6rem;
+        background-color: $white;
+        background-image: url("../images/menu.svg");
+        background-repeat: repeat;
+
+        .container {
+            background-color: white;
+            position: relative;
+            padding: 3rem;
+
+            &.gold {
+                background-color: $gold;
+            }
+
+        }
+
+        #pretext {
+            @include font(2rem, 700, false, blue);
+            font-size: 2rem;
+            color: $light-grey;
+            text-align: center;
+        }
+
+        .section {
+            margin: 3rem;
+            border: solid $gold 0.2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .heading {
+            font-size: 3.6rem;
+            color: $gold;
+            text-align: center;
+            margin: 6rem 0 2rem 0;
+
+            @extend %orpheus-i;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 3.2rem;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 2.6rem;
+            }
+        }
+
+        .logo {
+            background: url("../images/logo.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 8rem;
+            width: 8rem;
+            position: relative;
+        }
+
+        .flex-col-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 4rem;
+
+            p {
+                color: $gold;
+            }
+        }
+
+        .sub-heading {
+            font-size: 2.6rem;
+            color: $gold;
+            text-align: center;
+            margin: 3rem 0 1rem 0;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 2.8rem;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 2.4rem;
+            }
+        }
+
+        .desctitle {
+            font-size: 2rem;
+            color: $gold;
+            text-align: center;
+            margin: 3rem 0 6rem 0;
+        }
+
+        .menu_list {
+            width: 100%;
+            padding: 0 1.5rem 0rem 0;
+            list-style-type: none;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+
+            p {
+                padding-top: 1rem;
+                padding-bottom: 0;
+            }
+
+
+
+            li {
+                font-size: 1.8rem;
+                color: #fff;
+                /*width: 38rem;*/
+                margin: 0 auto 3rem auto;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.6rem;
+                    width: auto;
+                }
+
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+
+
+
+
+                &.section_title {
+                    color: $gold;
+                    font-size: 2.4rem;
+                    margin-bottom: 1.5rem;
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+
+            .foodname {
+                font-size: 2.4rem;
+                color: $black;
+                text-align: center;
+                font-weight: 800;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: dotted 1px $gold;
+                @extend %orpheus-b
+            }
+
+            .addinfo {
+                padding: 0 2rem;
+                color: $gold;
+            }
+
+            .desc {
+                font-size: 1.6rem;
+                color: $light-grey;
+                text-align: center;
+                font-weight: 300;
+            }
+
+            .price {
+                font-size: 2rem;
+                color: $black;
+                text-align: center;
+                font-weight: 900;
+                text-align: right;
+            }
+
+            .price-small {
+                text-align: right;
+                color: $gold;
+                position: relative;
+                padding-left: 5rem;
+
+                &::before {
+                    content: "S";
+                    position: absolute;
+                    background-color: $gold;
+                    width: 3rem;
+                    height: 3rem;
+                    left: 0rem;
+                    color: white;
+                    text-align: center;
+                    margin: 0px 1rem;
+                }
+            }
+        }
+
+        #biryani {
+            background-color: $gold;
+
+            .container {
+                background-color: $gold;
+
+                li {
+                    margin: 0;
+                }
+            }
+
+            h2 {
+                color: $black;
+            }
+
+            .desctitle {
+                color: $white;
+            }
+
+            p {
+                color: $black;
+            }
+
+            .foodname {
+                border-bottom: dotted 1px white;
+            }
+        }
+
+        #famous {
+            background-color: $gold;
+            border: solid $white 0.2rem;
+
+            .heading {
+                margin: 0;
+            }
+
+            .container {
+                background-color: $gold;
+
+                li {
+                    margin: 0;
+                }
+            }
+
+            .flex-center {
+                display: flex;
+                justify-content: center;
+            }
+
+            .desctitle {
+                margin: 0;
+            }
+
+            h2 {
+                color: $black;
+            }
+
+            .desctitle {
+                color: $white;
+            }
+
+            p {
+                color: $black;
+
+                span {
+                    color: white;
+                }
+            }
+
+            .foodname {
+                border-bottom: none;
+                @extend %orpheus-b;
+                font-size: 2.4rem;
+            }
+        }
+
+        #vegetable {
+            .desc {
+                width: 80%;
+            }
+
+            .price {
+                &::before {
+                    content: "M";
+                    position: absolute;
+                    background-color: $black;
+                    width: 3rem;
+                    height: 3rem;
+                    transform: translateX(-4rem);
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+
+        .additional_info {
+            font-size: 1.6rem;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            padding-top: 5rem;
+        }
+    }
+}

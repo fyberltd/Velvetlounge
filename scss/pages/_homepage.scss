@@ -1,0 +1,155 @@
+#home_page {
+    #hero {
+        height: 90vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        color: $white;
+        background-attachment: fixed;
+        position: relative;
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            .left-background {
+                background-image: url("../images/left-header.jpg");
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: 66%;
+                background-attachment: fixed;
+            }
+
+            .right-background {
+                background-image: url("../images/right-header.jpg");
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: 44%;
+                background-attachment: fixed;
+            }
+        }
+
+        /* &::before {
+     content: "";
+     display: block;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: rgba(0, 0, 0, .8);
+     z-index: 1;
+ }*/
+        .logo {
+            background-image: url("../images/Ruby's_Lounge_logo_no_bg-01 crop.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30vh;
+            width: 30vw;
+            position: relative;
+            z-index: 2
+        }
+
+        h2 {
+            position: relative;
+            z-index: 2;
+            color: $white;
+            font-size: 3rem;
+            @extend %orpheus-i;
+        }
+
+        p {
+            position: relative;
+            font-size: $p-font;
+            color: $gold;
+            z-index: 2;
+            font-size: 3rem;
+        }
+
+        a {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    #intro {
+        padding: 8rem 0;
+
+        .center {
+            display: flex;
+            justify-content: center;
+
+            p {
+                color: $gold;
+                text-align: center;
+                font-size: 2.6rem;
+
+                span {
+                    font-weight: $p-bold;
+                }
+            }
+        }
+
+    }
+
+    #about {
+
+        background-color: $gold;
+        text-align: left;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .text-box {
+            padding: 14vh 7vw 14vh;
+            background-image: url("../images/shutterstock_791386720 [Converted].svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h2 {
+                color: $white;
+                font-size: 3rem;
+                margin-bottom: 5rem;
+                @extend %orpheus-i;
+            }
+
+            p {
+                color: $white;
+                font-size: 2.6rem;
+            }
+        }
+
+
+        figure {
+            background-image: url("../images/shutterstock_117086992.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    #lastest_blog {
+        padding: 8rem 0;
+
+        h2 {
+            margin-bottom: 4rem;
+            font-size: 4rem;
+        }
+    }
+}

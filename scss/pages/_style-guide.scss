@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+#style-page {
+    font-family: 'Raleway', sans-serif;
+
+    .row {
+
+        padding: 0;
+    }
+
+    .flex-col-right {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .nav {
+        position: fixed;
+        height: 100vh;
+        background-color: $gold;
+        left: 0;
+        top: 0;
+
+        ul {
+            padding: 10vh 2rem;
+
+            li {
+                a {
+                    color: $white;
+
+                }
+            }
+        }
+    }
+
+    .padding-none {
+        padding: 0;
+    }
+
+    #hero {
+        height: 100vh;
+        background-color: $white;
+        background-image: url("../images/shutterstock_117086992.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        color: $white;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba($black, .8);
+            z-index: 1;
+        }
+
+        h1 {
+            position: relative;
+            z-index: 2;
+            color: $white;
+        }
+
+        p {
+            position: relative;
+            font-size: $p-font;
+            color: $white;
+            z-index: 2;
+        }
+
+        a {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    #headings {
+        padding: 3rem;
+        font-family: $family;
+    }
+
+    h1 {
+        font-size: $h1-font;
+        padding: $h1-padding;
+        color: $black;
+        font-family: $family;
+    }
+
+    h2 {
+        font-size: 4rem;
+        padding: $p-padding;
+        color: $black;
+        font-family: $family;
+    }
+
+    h3 {
+        font-size: 3rem;
+        padding: $p-padding;
+        color: $black;
+        font-family: $family;
+    }
+
+    h4 {
+        font-size: 2rem;
+        padding: $p-padding;
+        color: $black;
+        font-family: $family;
+    }
+
+    h5 {
+        font-size: 1rem;
+        padding: $p-padding;
+        color: $black;
+        font-family: $family;
+    }
+
+
+    #paragraph {
+        padding: 3rem;
+
+    }
+
+    p {
+        font-size: $p-font;
+        padding: $p-padding;
+        color: $black;
+        font-family: $family;
+
+        &.bold {
+            font-weight: $p-bold;
+        }
+
+        &.gold-background {
+            background-color: $gold;
+            color: $white;
+        }
+    }
+
+
+    #colors {
+        padding: 3rem;
+
+        .gold {
+            background-color: $gold;
+        }
+
+        .light-gold {
+            background-color: lighten($gold, 10%);
+        }
+
+        .dark-gold {
+            background-color: darken($gold, 10%);
+        }
+
+        .saturate-gold {
+            background-color: saturate($gold, 20%);
+        }
+
+        .desaturate-gold {
+            background-color: desaturate($gold, 20%);
+        }
+
+        .black {
+            background-color: $black;
+            color: $white;
+        }
+
+        .offwhite {
+            background-color: $white;
+        }
+
+        .light-grey {
+            background-color: $light-grey;
+        }
+
+        .dark-grey {
+            background-color: $dark-grey;
+            color: $white;
+        }
+
+    }
+
+    .button {
+        border: $button-border;
+        color: $gold;
+        transition: all 0.3s ease-in-out;
+        border-radius: 0;
+        margin: 2rem;
+        text-decoration: none;
+        background-color: unset;
+
+        &.gold-back {
+            background-color: $gold;
+            color: $white;
+        }
+
+        &.dark {
+            background-color: $black;
+
+            &:hover {
+                color: $black;
+                background-color: $gold;
+            }
+        }
+
+        &:hover {
+            background-color: $black;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            color: $gold;
+        }
+    }
+
+    a {
+        font-weight: 700;
+        font-size: $p-font;
+        text-decoration: none;
+        color: $black;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $gold;
+            text-decoration: wnone;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    hr {
+        border-top: solid 1px $gold;
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+
+        &.small-hr {
+            width: 10rem;
+            border-top: solid 4px $gold;
+        }
+
+        &.mid-hr {
+            width: 30vw;
+            border-top: solid 3px $gold;
+        }
+    }
+
+    #table {
+        padding: 3rem;
+
+        table {
+            font-size: $p-font;
+            padding: $p-padding;
+            color: $black;
+            border: 2px solid $gold;
+
+            td {
+                font-size: $p-font;
+                padding: .5rem;
+                border: 1px solid $gold;
+            }
+
+            th {
+                font-size: $p-font;
+                padding: .5rem;
+                border: 1px solid $gold;
+            }
+        }
+    }
+
+    #lists {
+        padding: 3rem;
+    }
+
+    ul {
+        list-style-type: none;
+        display: inline;
+        font-size: $p-font;
+        padding: $p-padding;
+        color: $black;
+
+        &.bulletpoints {
+            list-style-type: circle;
+        }
+
+        &.horizontal {
+            display: flex;
+        }
+
+        li {
+            padding: .5rem;
+            color: $black;
+        }
+    }
+
+    ol {
+        font-size: $p-font;
+        padding: $p-padding;
+        color: $black;
+
+        li {
+            padding-bottom: $p-padding;
+            color: $black;
+        }
+    }
+
+    dl {
+        font-size: $p-font;
+        padding: $p-padding;
+        color: $black;
+    }
+
+
+    #contact {
+        .row {
+            margin: 0;
+        }
+
+        a {
+            padding: 0 2rem;
+            fill: $black;
+
+            &:hover {
+                fill: $gold;
+            }
+
+            svg {
+                height: 2rem;
+
+            }
+        }
+
+        p {
+            padding: 2rem 0 0 2rem;
+        }
+    }
+
+    #contact_form {
+
+        padding: 2rem;
+
+        label {
+            font-size: 1.8rem;
+            color: $black;
+
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.6rem;
+            }
+        }
+
+        p {
+            padding: .5rem;
+
+            input {
+                border: 0.1rem solid #000;
+                /*border-radius: 0.5rem;*/
+                margin-bottom: 1rem;
+                width: 100%;
+                padding: 0 0.5rem;
+                font-size: 1.8rem;
+
+                &::placeholder {
+                    padding-left: 8rem;
+                    color: $gold;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.6rem;
+                }
+
+                &:focus {
+                    outline: none;
+                    -webkit-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    -moz-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                }
+            }
+
+            textarea {
+                border: 0.1rem solid #000;
+                /*border-radius: 0.5rem;*/
+                width: 100%;
+                padding: 0 0.5rem;
+                font-size: 1.8rem;
+                height: 20em;
+
+                &::placeholder {
+                    padding-left: 1rem;
+                    color: $gold;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.6rem;
+                }
+
+                &:focus {
+                    outline: none;
+                    -webkit-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    -moz-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                }
+            }
+
+            .wpcf7-not-valid-tip {
+                font-size: 1.4rem;
+                color: $gold;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        #btn_cont {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            position: relative;
+            justify-content: flex-end;
+            margin-top: 0.5rem;
+
+            .btn_wrap {
+                position: relative;
+                z-index: 1;
+                /*border-radius: 0.5rem;*/
+                overflow: hidden;
+
+                .wpcf7-submit {
+                    margin-left: auto;
+                    border: 0.2rem solid $light-grey;
+                    /*border-radius: 0.5rem;*/
+                    color: $black;
+                    line-height: 1em;
+                    padding: 0.4rem 2rem;
+                    font-size: 1.8rem;
+                    outline: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        border: .2rem solid $gold;
+                        color: $gold;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $gold;
+                    z-index: -1;
+                    /*border-radius: 0.5rem;*/
+                    -webkit-transition: top 0.1s;
+                    -o-transition: top 0.1s;
+                    transition: top 0.1s;
+                }
+
+                &.animate {
+                    &:before {
+                        top: 0;
+                    }
+                }
+
+                .ajax-loader {
+                    position: absolute;
+                    top: 28%;
+                    right: 0;
+                }
+            }
+        }
+
+        .wpcf7-response-output {
+            font-size: 1.4rem;
+            color: $gold;
+            margin: 1.5rem 0 0 0;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    .nav {
+        color: $black;
+
+    }
+
+    #images {
+        display: flex;
+        justify-content: space-around;
+
+        figure {
+            overflow: hidden;
+
+            img {
+                height: 30vh;
+                transition: all .5s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.5);
+                    transition: all .5s ease-in-out;
+
+                }
+
+            }
+
+            figcaption {
+                font-size: $p-font;
+                font-family: $family;
+                color: $gold;
+                background-color: $dark-grey;
+                padding: 1rem;
+            }
+        }
+    }
+}

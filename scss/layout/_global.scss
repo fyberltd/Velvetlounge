@@ -1,0 +1,132 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: .5rem 3rem;
+    border: $button-border;
+    color: $gold;
+    font-size: $p-font;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+    margin: 2rem;
+    text-decoration: none;
+    background-color: unset;
+
+    &.gold-back {
+        background-color: $gold;
+        color: $white;
+    }
+
+    &.dark {
+        background-color: $black;
+
+        &:hover {
+            color: $white;
+            background-color: $gold;
+        }
+    }
+
+    &:hover {
+        background-color: $black;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        color: $gold;
+    }
+}
+
+hr {
+    border-top: solid 1px $gold;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    &.small-hr {
+        width: 10rem;
+        border-top: solid 4px $gold;
+    }
+
+    &.mid-hr {
+        width: 30vw;
+        border-top: solid 3px $gold;
+    }
+}
+
+/*.blog_posts {
+    position: relative;
+
+    .post {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .date {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .excerpt {
+            font-size: 1.4rem;
+        }
+    }
+
+    .loading_icon {
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        right: 1.5rem;
+        height: 100%;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, .5);
+        z-index: 10;
+        display: none;
+
+        &.loading {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+}*/
+
+.load_btn {
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 2rem;
+    background-color: blue;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    color: white;
+}

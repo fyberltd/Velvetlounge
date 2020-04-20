@@ -1,0 +1,245 @@
+#contact_page {
+    background-color: $dark-grey;
+    padding: 6rem 0 0 0;
+    background-image: url("../images/shutterstock_791386720 [Converted].svg");
+    background-repeat: repeat;
+    background-size: 50%;
+
+
+    h2 {
+        padding-left: 0;
+    }
+
+    h3 {
+        padding-left: 0;
+        color: $white;
+    }
+
+    p {
+        padding: 0;
+        color: $white;
+    }
+
+    #top_wrap {
+        padding-bottom: 6rem;
+
+        .title {
+            font-size: 3.6rem;
+            color: $gold;
+            margin-bottom: 3rem;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 3.2rem;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 2.6rem;
+            }
+        }
+
+        .wrap {
+
+            h3 {
+                font-size: 2.6rem;
+                color: $white;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                color: $white;
+                font-weight: 300;
+
+                a {
+                    color: $gold;
+                    text-decoration: none;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: darken($gold, 10%);
+                    }
+                }
+            }
+        }
+
+        .intro {
+            font-size: 1.8rem;
+            color: $gold;
+            margin-bottom: 1.5rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.6rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+
+        #contact_details {
+            list-style-type: none;
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            li {
+                font-size: 1.8rem;
+                color: $gold;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.6rem;
+                }
+
+                &:nth-child(4) {
+                    margin-bottom: 0.5rem;
+                }
+
+                &:nth-child(5) {
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    color: lighten($gold, 10%);
+                }
+            }
+        }
+
+        #contact_form {
+            label {
+                font-size: 1.8rem;
+                color: $gold;
+
+                @include media-breakpoint-down(md) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            p {
+                input {
+                    border: 0.1rem solid #000;
+                    border-radius: 0.5rem;
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    padding: 0 0.5rem;
+                    font-size: 1.8rem;
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 1.6rem;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        -webkit-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                        -moz-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                        box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    }
+                }
+
+                textarea {
+                    border: 0.1rem solid #000;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                    padding: 0 0.5rem;
+                    font-size: 1.8rem;
+                    height: 20em;
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 1.6rem;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        -webkit-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                        -moz-box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                        box-shadow: 0px 0px 2px 2px rgba(178, 178, 178, 1);
+                    }
+                }
+
+                .wpcf7-not-valid-tip {
+                    font-size: 1.4rem;
+                    color: $light-grey;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            #btn_cont {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                position: relative;
+                justify-content: flex-end;
+                margin-top: 0.5rem;
+
+                .btn_wrap {
+                    position: relative;
+                    z-index: 1;
+                    border-radius: 0.5rem;
+                    overflow: hidden;
+
+                    .wpcf7-submit {
+                        display: inline-block;
+                        padding: .5rem 3rem;
+                        border: $button-border;
+                        color: $white;
+                        font-size: $p-font;
+                        transition: all 0.3s ease-in-out;
+                        border-radius: 0;
+                        margin: 2rem;
+                        text-decoration: none;
+                        background-color: $gold;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $dark-grey;
+                            transition: all 0.3s ease-in-out;
+                            text-decoration: none;
+                            color: $gold;
+                        }
+
+                    }
+
+                    &:before {
+                        content: ' ';
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: $light-grey;
+                        z-index: -1;
+                        border-radius: 0.5rem;
+                        -webkit-transition: top 0.1s;
+                        -o-transition: top 0.1s;
+                        transition: top 0.1s;
+                    }
+
+                    &.animate {
+                        &:before {
+                            top: 0;
+                        }
+                    }
+
+                    .ajax-loader {
+                        position: absolute;
+                        top: 28%;
+                        right: 0;
+                    }
+                }
+            }
+
+            .wpcf7-response-output {
+                font-size: 1.4rem;
+                color: $light-grey;
+                margin: 1.5rem 0 0 0;
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+}
