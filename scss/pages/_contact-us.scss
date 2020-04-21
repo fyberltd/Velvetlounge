@@ -1,5 +1,5 @@
 #contact_page {
-    background-color: $dark-grey;
+    background-color: $brand-blue;
     padding: 6rem 0 0 0;
     background-image: url("../images/shutterstock_791386720 [Converted].svg");
     background-repeat: repeat;
@@ -196,7 +196,7 @@
                         cursor: pointer;
 
                         &:hover {
-                            background-color: $dark-grey;
+                            background-color: $brand-blue;
                             transition: all 0.3s ease-in-out;
                             text-decoration: none;
                             color: $gold;

@@ -31,7 +31,7 @@ h6 {
     }
 
     &.dark {
-        background-color: $black;
+        background-color: rgba($brand-blue, .5);
 
         &:hover {
             color: $white;
@@ -40,7 +40,7 @@ h6 {
     }
 
     &:hover {
-        background-color: $black;
+        background-color: rgba($brand-blue, .5);
         transition: all 0.3s ease-in-out;
         text-decoration: none;
         color: $gold;

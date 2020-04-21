@@ -10,52 +10,73 @@
         justify-content: center;
         color: $white;
         background-attachment: fixed;
-        position: relative;
+        background-image: url("../images/hero.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 
-        .background {
+        // .background {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     height: 100%;
+        //     width: 100%;
+    
+
+        //     .left-background {
+        //         background-image: url("../images/left-header.jpg");
+        //         background-position: left;
+        //         background-repeat: no-repeat;
+        //         background-size: 66%;
+        //         background-attachment: fixed;
+        //     }
+
+        //     .right-background {
+        //         background-image: url("../images/right-header.jpg");
+        //         background-position: right;
+        //         background-repeat: no-repeat;
+        //         background-size: 44%;
+        //         background-attachment: fixed;
+        //     }
+        // }
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
             width: 100%;
-
-            .left-background {
-                background-image: url("../images/left-header.jpg");
-                background-position: left;
-                background-repeat: no-repeat;
-                background-size: 66%;
-                background-attachment: fixed;
-            }
-
-            .right-background {
-                background-image: url("../images/right-header.jpg");
-                background-position: right;
-                background-repeat: no-repeat;
-                background-size: 44%;
-                background-attachment: fixed;
+            background-color: rgba($brand-blue, .5);
+            z-index: 1;
+            @include media-breakpoint-down(lg){
+                background-color: rgba($brand-blue, .7);
             }
         }
 
-        /* &::before {
-     content: "";
-     display: block;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     background-color: rgba(0, 0, 0, .8);
-     z-index: 1;
- }*/
         .logo {
-            background-image: url("../images/Ruby's_Lounge_logo_no_bg-01 crop.png");
+            background-image: url("../images/PNG/velvet lounge logo_white.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            height: 30vh;
-            width: 30vw;
+            height: 40rem;
+            width: 40rem;
             position: relative;
-            z-index: 2
+            margin: 2rem;
+            z-index: 2;
+            @include media-breakpoint-down(lg) {
+                width: 30rem;
+                height: 30rem;
+            }
+
+        }
+        .btn-row{
+            @include media-breakpoint-down(lg){
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         h2 {
@@ -141,6 +162,9 @@
             background-size: cover;
             padding: 0;
             margin: 0;
+            @include media-breakpoint-down(lg){
+                min-height:50rem;
+            }
         }
     }
 

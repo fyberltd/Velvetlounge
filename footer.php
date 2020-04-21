@@ -2,15 +2,15 @@
 <footer id="footer">
     <div class="container-fluid content">
         <div class="row">
-            <div class="col-2 offset-1">
+            <div class="col-lg-4 col-xl-2 offset-lg-1 flex-center">
                 <a href="<?php echo get_home_url(); ?>" class="logo">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/images/Ruby's_Lounge_logo_no_bg-01 crop.png" alt="logo">
+                    <img src="<?php echo bloginfo('template_directory'); ?>/images/PNG/velvet lounge logo_white.png" alt="logo">
                 </a>
             </div>
         </div>
         <hr>
         <div class="row">
-            <address class="col-2 offset-1">
+            <address class="col-lg-2 offset-lg-1">
                 <p>
                     159 Huddersfield Rd,
                 </p>
@@ -24,10 +24,10 @@
                     <a href="">01924 496655</a>
                 </p>
             </address>
-            <nav class="col-2">
+            <nav class="col-lg-2">
                 <?php wp_nav_menu( array('theme_location' => 'footer_nav', 'container_id' => 'footer_nav') ); ?>
             </nav>
-            <div class="col-2 social-row">
+            <div class="col-lg-2 social-row">
                 <a href="" class="facebook"></a>
                 <a href="" class="instagram"></a>
             </div>

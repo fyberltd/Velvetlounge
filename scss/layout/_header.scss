@@ -1,5 +1,5 @@
 #header {
-    background-color: #000;
+    background-color: $brand-blue;
     width: 100%;
     display: block;
     padding: 2rem 0;
@@ -18,9 +18,22 @@
         display: flex;
         justify-content: space-between;
 
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .logo {
-            width: 14rem;
+            width: 15rem;
             padding: 1rem;
+            margin-left: 8rem;
+
+            @include media-breakpoint-down(lg) {
+                width: 30rem;
+                padding: 3rem;
+                margin: auto;
+            }
+
 
             img {
                 width: 100%;
@@ -28,17 +41,50 @@
             }
         }
 
+        .nav-right {
+            display: flex;
+
+            // @include media-breakpoint-down(lg) {
+            //     width: 100%;
+            //     justify-content: space-between;
+
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                }
+            
+        }
+
         nav {
             padding: 2rem;
             display: flex;
             align-items: center;
 
+            @include media-breakpoint-down(md) {
+                margin: auto;
+                padding: 0;
+            }
+
             ul {
                 display: flex;
 
+                @include media-breakpoint-down(md) {
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+                }
+                @include media-breakpoint-down(xs) {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                   }
                 li {
                     display: ruby;
                     padding: 1rem;
+                    text-align: center;
+                    @include media-breakpoint-down(sm) {
+                       
+                    }
+                    @include media-breakpoint-down(xs) {
+                        text-align: start;width: 32%;
+                     }
 
                     a {
                         font-size: 2rem;
@@ -60,9 +106,13 @@
             display: flex;
             align-items: center;
 
+            @include media-breakpoint-down(md) {
+                margin: auto;
+            }
+
             a {
-                height: 5rem;
-                width: 5rem;
+                height: 4rem;
+                width: 4rem;
                 background-position: center;
 
                 background-repeat: no-repeat;
@@ -72,7 +122,7 @@
                 transition: all 0.3s ease-in-out;
 
                 &:hover {
-                    background-color: darken($gold, 30%);
+                    background-color: #fff;
                     transition: all 0.3s ease-in-out;
                 }
 
