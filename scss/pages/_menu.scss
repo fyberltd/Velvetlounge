@@ -19,7 +19,8 @@
             width: 100%;
             top: 0;
             box-shadow: 0 0.1rem 1rem #000;
-            @include media-breakpoint-down(lg){
+
+            @include media-breakpoint-down(lg) {
                 position: relative;
                 box-shadow: none;
             }
@@ -45,7 +46,7 @@
 
                 @include media-breakpoint-down(md) {
                     font-size: 1.8rem;
-                    margin:.5rem;
+                    margin: .5rem;
                 }
 
                 &.active {
@@ -74,7 +75,7 @@
             background-color: white;
             position: relative;
             padding: 3rem;
-            
+
             @include media-breakpoint-down(md) {
                 padding: 0;
                 margin: auto;
@@ -98,7 +99,7 @@
             border: solid $gold 0.2rem;
             display: flex;
             justify-content: center;
-            
+
             @include media-breakpoint-down(md) {
                 padding: 0;
                 margin: 0;
@@ -161,10 +162,12 @@
         .desctitle {
             font-size: 2rem;
             color: $gold;
-            text-align: center;
-            margin: 3rem 0 6rem 0;
-            @include media-breakpoint-down(md){
-                font-size:1.8rem;
+            text-align: left;
+            margin: 3rem auto 6rem;
+            max-width: 90%;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.8rem;
             }
         }
 
@@ -240,6 +243,7 @@
             .addinfo {
                 padding: 0 2rem;
                 color: $gold;
+
                 @include media-breakpoint-down(md) {
                     padding: 0;
                     margin: 0;
@@ -259,6 +263,7 @@
                 text-align: center;
                 font-weight: 900;
                 text-align: right;
+
                 @include media-breakpoint-down(md) {
                     text-align: center;
                 }
@@ -365,7 +370,26 @@
                 width: 80%;
             }
 
+            .foodname {
+                font-family: orpheuspro, serif;
+
+                @include media-breakpoint-down(md) {
+                    flex-direction: row;
+                    text-align: center;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+
             .price {
+                @include media-breakpoint-down(xs) {
+                    padding: 2rem;
+                    margin-left: 4rem;
+                }
+
                 &::before {
                     content: "M";
                     position: absolute;
@@ -385,6 +409,10 @@
             text-align: center;
             width: 100%;
             padding-top: 5rem;
+
+            @include media-breakpoint-down(xs) {
+                text-align: left;
+            }
         }
     }
 }

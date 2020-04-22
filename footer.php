@@ -34,10 +34,14 @@
         </div>
         <div id="bottom_bar">
             <p><a href="#">Privacy Policy</a> - <a href="#">Cookies Policy</a></p>
-            <p>&copy; 2020 Template - Website by <a target="_blank"href="https://fyber.co.uk">Fyber</a></p>
+            <p>&copy; 2020 Velvet Lounge - Website by <a target="_blank"href="https://fyber.co.uk">Fyber</a></p>
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
 <?php wp_footer(); ?>
 </body>

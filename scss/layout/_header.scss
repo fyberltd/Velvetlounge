@@ -24,7 +24,7 @@
         }
 
         .logo {
-            width: 15rem;
+            width: 17rem;
             padding: 1rem;
             margin-left: 8rem;
 
@@ -48,10 +48,10 @@
             //     width: 100%;
             //     justify-content: space-between;
 
-                @include media-breakpoint-down(md) {
-                    flex-direction: column;
-                }
-            
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+
         }
 
         nav {
@@ -66,25 +66,30 @@
 
             ul {
                 display: flex;
+                list-style: none;
 
                 @include media-breakpoint-down(md) {
-                 flex-wrap: wrap;
-                 justify-content: space-between;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                 }
+
                 @include media-breakpoint-down(xs) {
                     flex-wrap: wrap;
-                    justify-content: flex-start;
-                   }
+                    justify-content: center;
+                }
+
                 li {
                     display: ruby;
                     padding: 1rem;
                     text-align: center;
-                    @include media-breakpoint-down(sm) {
-                       
-                    }
+
+                    @include media-breakpoint-down(sm) {}
+
                     @include media-breakpoint-down(xs) {
-                        text-align: start;width: 32%;
-                     }
+                        text-align: start;
+                        width: 32%;
+                        text-align: center;
+                    }
 
                     a {
                         font-size: 2rem;

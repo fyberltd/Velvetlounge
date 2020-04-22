@@ -60,15 +60,19 @@
                 color: $white;
                 font-weight: 300;
                 padding: 0.6rem 0;
+                &.bold{
+                    font-weight: 800;
+                }
 
-                a {
-                    color: $gold;
+            }
+            a {
+                color: $gold;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    color: $white;
                     text-decoration: none;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: darken($gold, 10%);
-                    }
                 }
             }
         }
@@ -112,7 +116,15 @@
                 }
 
                 a {
-                    color: lighten($gold, 10%);
+                    color: $gold;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover {
+                        color: $white;
+                        text-decoration: none;
+                    }
                 }
             }
         }

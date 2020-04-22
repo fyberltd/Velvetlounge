@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velvet Lounge</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/abf6sjy.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
@@ -15,17 +16,18 @@
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
-                        "background": "#252e39"
+                        "background": "#201e32"
                     },
                     "button": {
                         "background": "transparent",
-                        "text": "#14a7d0",
-                        "border": "#14a7d0"
+                        "text": "#b78b49",
+                        "border": "#b78b49"
                     }
                 }
             })
         });
     </script>
+    
     <?php wp_head(); ?>
 </head>
 <!-- https://cookieconsent.osano.com/download/ -->

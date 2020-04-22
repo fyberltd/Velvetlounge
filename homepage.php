@@ -4,6 +4,9 @@
 <?php 
     get_header();
 ?>
+<script>
+  AOS.init();
+</script>
 <div id="home_page">
     <section id="hero">
         <!-- <div class="row background">
@@ -18,7 +21,7 @@
     </section>
     <article id="intro">
         <div class="container center">
-            <div class="col-xl-6">
+            <div class="col-xl-7" data-aos="fade-up">
                 <p><span class="bold">Welcome to Velvet Lounge,</span> a modern and sleek restaurant serving an extraordinary selection of traditional favourites and specialty dishes from many&nbsp;different&nbsp;regions. </p>
             </div>
         </div>
@@ -26,7 +29,7 @@
     <article id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-5 text-box">
+                <div class="col-xl-5 text-box" data-aos="fade-right">
                     <h2>About Velvet Lounge</h2>
                     <p>
                         All good Indian Restaurants jealously guard their recipe for the spice blends which make each dish distinctive. The spices are freshly pounded, fried in ghee to bring out their flavour and then combined with other herbs&nbsp;and&nbsp;ingredients.
@@ -36,7 +39,7 @@
                         Some dishes may contain nuts, please ask a member of staff&nbsp;for&nbsp;assistance.
                     </p>
                 </div>
-                <figure class="col-xl-7">
+                <figure class="col-xl-7"data-aos="fade-left" data-aos-delay="200">
                 </figure>
             </div>
         </div>

@@ -6,20 +6,20 @@
     <nav class="row" id="food-links">
         <div class="col-lg-12">
             <ul class="quicklinks">
-                <?php if( have_rows('starter') ): ?><li><a data-scroll href="#starters">Starters</a></li>
+                <?php if( have_rows('starter') ): ?><li><a class="quicknav" href="#starters">Starters</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('mains') ): ?><li><a data-scroll href="#mains">Mains</a></li> <?php endif; ?>
-                <?php if( have_rows('biryani') ): ?><li><a data-scroll href="#biryani">Biryani</a></li> <?php endif; ?>
-                <?php if( have_rows('grilled') ): ?><li><a data-scroll href="#grilled">Grilled Dishes</a></li>
+                <?php if( have_rows('mains') ): ?><li><a class="quicknav" href="#mains">Mains</a></li> <?php endif; ?>
+                <?php if( have_rows('biryani') ): ?><li><a class="quicknav" href="#biryani">Biryani</a></li> <?php endif; ?>
+                <?php if( have_rows('grilled') ): ?><li><a class="quicknav" href="#grilled">Grilled Dishes</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('famous') ): ?><li><a data-scroll href="#famous">Famous Curry Dishes</a></li>
+                <?php if( have_rows('famous') ): ?><li><a class="quicknav" href="#famous">Famous Curry Dishes</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('vegetable') ): ?><li><a data-scroll href="#vegetable">Vegetables</a></li>
+                <?php if( have_rows('vegetable') ): ?><li><a class="quicknav" href="#vegetable">Vegetables</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('childrens') ): ?><li><a data-scroll href="#children">Childrens</a></li>
+                <?php if( have_rows('childrens') ): ?><li><a class="quicknav" href="#children">Childrens</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('drinks') ): ?><li><a data-scroll href="#drinks">Drinks</a></li> <?php endif; ?>
-                <?php if( have_rows('accompaniments') ): ?><li><a data-scroll href="#accompaniments">Accompaniments</a></li>
+                <?php if( have_rows('drinks') ): ?><li><a class="quicknav" href="#drinks">Drinks</a></li> <?php endif; ?>
+                <?php if( have_rows('accompaniments') ): ?><li><a class="quicknav" href="#accompaniments">Accompaniments</a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -35,7 +35,7 @@
                 </div>
             </div> -->
             <!-- starters -->
-            <div id="starters" class="row section">
+            <div id="starters" class="row section" data-aos="fade-up">
                 <div class="col-lg-8">
                     <h2 class="heading">Starters</h2>
                     <p class="desctitle">
@@ -86,7 +86,7 @@
             <?php endif; ?>
             <!-- Mains -->
             <?php if( have_rows('mains') ): ?>
-            <div id="mains" class="row section">
+            <div id="mains" class="row section" data-aos="fade-up">
                 <div class="col-lg-8">
                     <h2 class="heading">Mains</h2>
                     <p class="desctitle">
@@ -136,7 +136,7 @@
         <?php if( have_rows('biryani') ): ?>
         <div class="container gold">
             <!-- Biriani -->
-            <div id="biryani" class="row section">
+            <div id="biryani" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="heading">Biryani Dishes</h2>
@@ -188,7 +188,7 @@
         <?php if( have_rows('grilled') ): ?>
         <div class="container">
 
-            <div id="grilled" class="row section">
+            <div id="grilled" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="heading">Grilled Dishes</h2>
@@ -238,7 +238,7 @@
         <?php if( have_rows('famous') ): ?>
         <div class="container gold">
 
-            <div id="famous" class="row section">
+            <div id="famous" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="heading">Famous Curry Dishes</h2>
@@ -249,7 +249,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-xl-8">
 
                             <div class="row justify-content-center">
                                 <?php while( have_rows('famous') ): the_row(); 
@@ -276,12 +276,12 @@
         <?php if( have_rows('vegetable') ): ?>
         <div class="container">
 
-            <div id="vegetable" class="row section">
+            <div id="vegetable" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <h2 class="heading">Vegetable&nbsp;Mains</h2>
                         <p class="desctitle">
-                            Also available as a side
+                            Also&nbsp;available&nbsp;as&nbsp;a&nbsp;side
                         </p>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
             </div><?php endif; ?>
         </div> <?php if( have_rows('childrens') ): ?>
         <div class="container">
-            <div id="childrens" class="row section">
+            <div id="childrens" class="row section" data-aos="fade-up">
                 <div class="col-lg-8">
                     <h2 class="heading">Childrens</h2>
                     <!-- <p class="desctitle">
@@ -375,7 +375,7 @@
         </div> <?php endif; ?>
         <?php if( have_rows('drinks') ): ?>
         <div class="container">
-            <div id="drinks" class="row section">
+            <div id="drinks" class="row section" data-aos="fade-up">
                 <div class="col-lg-8">
                     <h2 class="heading">Drinks</h2>
                     <!-- <p class="desctitle">
@@ -422,7 +422,7 @@
         <?php endif; ?>
         <?php if( have_rows('accompaniments') ): ?>
         <div class="container">
-            <div id="accompaniments" class="row section">
+            <div id="accompaniments" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="heading">Accompaniments</h2>
@@ -430,7 +430,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-xl-8">
 
                             <div class="menu_list row">
                                 <?php while( have_rows('accompaniments') ): the_row(); 
