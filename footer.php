@@ -10,7 +10,7 @@
         </div>
         <hr>
         <div class="row">
-            <address class="col-lg-2 offset-lg-1">
+            <address class="col-lg-3 col-xl-2 offset-lg-1">
                 <p>
                     159 Huddersfield Rd,
                 </p>
@@ -18,23 +18,23 @@
                     Mirfield,
                 </p>
                 <p>
-                    <a href="">WF14 9DQ</a>
+                    WF14 9DQ
                 </p>
                 <p>
-                    <a href="">01924 496655</a>
+                    <a href="tel:01924496655">01924 496655</a>
                 </p>
             </address>
-            <nav class="col-lg-2">
+            <nav class="col-lg-3 col-xl-2">
                 <?php wp_nav_menu( array('theme_location' => 'footer_nav', 'container_id' => 'footer_nav') ); ?>
             </nav>
-            <div class="col-lg-2 social-row">
+            <div class="col-lg-3 col-xl-2 social-row flex-center">
                 <a href="" class="facebook"></a>
                 <a href="" class="instagram"></a>
             </div>
         </div>
         <div id="bottom_bar">
             <p><a href="#">Privacy Policy</a> - <a href="#">Cookies Policy</a></p>
-            <p>&copy; 2019 Template - Website by <a href="https://fyber.co.uk">Fyber</a></p>
+            <p>&copy; 2020 Template - Website by <a target="_blank"href="https://fyber.co.uk">Fyber</a></p>
         </div>
     </div>
 </footer>

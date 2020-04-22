@@ -49,7 +49,7 @@
     <?php if ( have_posts() ) : ?>
     <div class="container-fluid pl-0 pr-0">
         <div class="row no-gutters">
-            <?php echo do_shortcode( '[ajax_load_more acf="true" acf_post_id="205" acf_field_type="gallery" acf_field_name="gallery_images" post_type="post" transition_container="false" images_loaded="true" button_label="Load More" button_loading_label="Loading" offset="1" posts_per_page="4" scroll="false"]' );
+            <?php echo do_shortcode( '[ajax_load_more acf="true" acf_post_id="231" acf_field_name="gallery_images" post_type="post" acf_field_type="gallery"  transition_container="false" images_loaded="true" button_label="Load More" button_loading_label="Loading" offset="1" posts_per_page="4" scroll="false"]' );
 					?>
         </div>
     </div>

@@ -41,7 +41,7 @@
                     <p class="desctitle">
                         All starters are served with salad and mint sauce. Most starters are pre-marinated
                         but if you prefer your food less spicy, please speak to a waiter to
-                        see if we can accommodate to your needs.
+                        see if we can accommodate&nbsp;to&nbsp;your&nbsp;needs.
                     </p>
                 </div>
                 <div class="container">
@@ -66,8 +66,12 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></p>
+                                            <?if ($price): ?>
+                                        <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
+                                        <?php endif ?>
+                                        <?php endif ?>
                                     </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -87,7 +91,7 @@
                     <h2 class="heading">Mains</h2>
                     <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
-                        food colouring or flavours nor do we include any preservatives in any of our food.
+                        food colouring or flavours nor do we include any preservatives in any&nbsp;of&nbsp;our&nbsp;food.
                     </p>
                 </div>
                 <div class="container">
@@ -112,8 +116,10 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></p>
+                                        <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
+                                        <?php endif ?>
                                     </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -136,7 +142,7 @@
                         <h2 class="heading">Biryani Dishes</h2>
                         <p class="desctitle">
                             Rice dishes cooked using Basmati long grain crops originated from Pakistan. Great taste,
-                            great aroma creating the ultimate rice dish. Can be served with raitha or curry sauce.
+                            great aroma creating the ultimate rice dish. Can be served with raitha&nbsp;or&nbsp;curry&nbsp;sauce.
                         </p>
                     </div>
                 </div>
@@ -161,8 +167,10 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></p>
+                                        <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
+                                        <?php endif ?>
                                     </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -186,7 +194,7 @@
                         <h2 class="heading">Grilled Dishes</h2>
                         <p class="desctitle">
                             Rice dishes cooked using Basmati long grain crops originated from Pakistan. Great taste,
-                            great aroma creating the ultimate rice dish. Can be served with raitha or curry sauce.
+                            great aroma creating the ultimate rice dish. Can be served with raitha&nbsp;or&nbsp;curry&nbsp;sauce.
                         </p>
                     </div>
                 </div>
@@ -209,8 +217,10 @@
                                         <p>
                                             <?php echo $foodname; ?>
                                         </p>
+                                        <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
+                                        <?php endif ?>
                                     </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -346,8 +356,10 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></p>
+                                        <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
+                                        <?php endif ?>
                                     </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -390,8 +402,10 @@
                                     <p class="foodname">
                                         <span>
                                             <?php echo $foodname; ?>
+                                            <?if ($price): ?>
                                             <span class="price">£&nbsp;<?php echo $price; ?>
                                             </span>
+                                            <?php endif ?>
                                     </p>
                                     <p class="desc">
                                         <?php echo $desc; ?>
@@ -436,8 +450,10 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></span>
-                                        <span class="price">£&nbsp;<?php echo $price; ?>
-                                        </span>
+                                            <?if ($price): ?>
+                                            <span class="price">£&nbsp;<?php echo $price; ?>
+                                            </span>
+                                            <?php endif ?>
                                     </p>
                                     <p class="desc">
                                         <?php echo $desc; ?>

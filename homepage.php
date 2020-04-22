@@ -19,7 +19,7 @@
     <article id="intro">
         <div class="container center">
             <div class="col-xl-6">
-                <p><span class="bold">Welcome to Velvet Lounge,</span> a modern and sleek restaurant serving an extraordinary selection of traditional favourites and specialty dishes from many different regions. </p>
+                <p><span class="bold">Welcome to Velvet Lounge,</span> a modern and sleek restaurant serving an extraordinary selection of traditional favourites and specialty dishes from many&nbsp;different&nbsp;regions. </p>
             </div>
         </div>
     </article>

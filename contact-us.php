@@ -15,11 +15,6 @@
                     <!-- <li><a href="mailto:info@jinnhabistro.co.uk">info@jinnhabistro.co.uk</a></li> -->
                 </ul>
                 <div class="wrap">
-                    <h3>Takeaway</h3>
-                    <p>Call and collect on <a href="tel:01274396666">01274 39 66 66</a></p>
-                    <p>10% off collection orders</p>
-                </div>
-                <div class="wrap">
                     <p> Monday: Closed</p>
                     <p>
                         Tuesday: 05:00pm - 11:00pm</p>
@@ -34,7 +29,7 @@
                     <p>
                         Sunday: 05:00pm - 11:00pm</p>
                     <p class="bold">
-                        We are also open bank holidays as well as during the day on Christmas Day</p>
+                        We are also open bank holidays as well as during the day on&nbsp;Christmas&nbsp;Day</p>
                 </div>
 
             </div>
