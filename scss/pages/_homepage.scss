@@ -171,6 +171,9 @@
 
         .row {
             margin: 0;
+            @include media-breakpoint-down(lg){
+                flex-direction: column-reverse;
+            }
         }
 
         figure {

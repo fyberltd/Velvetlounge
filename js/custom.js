@@ -5,6 +5,10 @@ jQuery(document).ready(function ($) {
 
 	// Add smooth scrolling to all links
 	$(".quicknav").on('click', function (event) {
+		$("#food-links").removeClass("show");
+		$(".bar1").removeClass("change");
+		$(".bar2").removeClass("change");
+		$(".bar3").removeClass("change");
 
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
@@ -25,6 +29,15 @@ jQuery(document).ready(function ($) {
 			});
 		} // End if
 	});
+
+
+	//mobile nav
+	$(".mobile-nav").click(function () {
+		$("#food-links").toggleClass("show");
+		$(".bar1").toggleClass("change");
+		$(".bar2").toggleClass("change");
+		$(".bar3").toggleClass("change");
+	})
 
 	//booking form
 	var option;

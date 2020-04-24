@@ -3,13 +3,24 @@
 ?>
 <?php get_header(); ?>
 <section id="menu_page">
+    <div class="mobile-nav">
+        <div class="container mobile-width">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
     <nav class="row" id="food-links">
         <div class="col-lg-12">
             <ul class="quicklinks">
+
+
+
                 <?php if( have_rows('starter') ): ?><li><a class="quicknav" href="#starters">Starters</a></li>
                 <?php endif; ?>
                 <?php if( have_rows('mains') ): ?><li><a class="quicknav" href="#mains">Mains</a></li> <?php endif; ?>
-                <?php if( have_rows('biryani') ): ?><li><a class="quicknav" href="#biryani">Biryani</a></li> <?php endif; ?>
+                <?php if( have_rows('biryani') ): ?><li><a class="quicknav" href="#biryani">Biryani</a></li>
+                <?php endif; ?>
                 <?php if( have_rows('grilled') ): ?><li><a class="quicknav" href="#grilled">Grilled Dishes</a></li>
                 <?php endif; ?>
                 <?php if( have_rows('famous') ): ?><li><a class="quicknav" href="#famous">Famous Curry Dishes</a></li>
@@ -18,8 +29,10 @@
                 <?php endif; ?>
                 <?php if( have_rows('childrens') ): ?><li><a class="quicknav" href="#children">Childrens</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('drinks') ): ?><li><a class="quicknav" href="#drinks">Drinks</a></li> <?php endif; ?>
-                <?php if( have_rows('accompaniments') ): ?><li><a class="quicknav" href="#accompaniments">Accompaniments</a></li>
+                <?php if( have_rows('drinks') ): ?><li><a class="quicknav" href="#drinks">Drinks</a></li>
+                <?php endif; ?>
+                <?php if( have_rows('accompaniments') ): ?><li><a class="quicknav"
+                        href="#accompaniments">Accompaniments</a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -66,7 +79,7 @@
                                             <span class="addinfo">
                                                 <?php echo $addinfo; ?>
                                             </span></p>
-                                            <?if ($price): ?>
+                                        <?if ($price): ?>
                                         <?if ($price): ?>
                                         <p class="price">£&nbsp;<?php echo $price; ?>
                                         </p>
@@ -91,7 +104,8 @@
                     <h2 class="heading">Mains</h2>
                     <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
-                        food colouring or flavours nor do we include any preservatives in any&nbsp;of&nbsp;our&nbsp;food.
+                        food colouring or flavours nor do we include any preservatives in
+                        any&nbsp;of&nbsp;our&nbsp;food.
                     </p>
                 </div>
                 <div class="container">
@@ -142,7 +156,8 @@
                         <h2 class="heading">Biryani Dishes</h2>
                         <p class="desctitle">
                             Rice dishes cooked using Basmati long grain crops originated from Pakistan. Great taste,
-                            great aroma creating the ultimate rice dish. Can be served with raitha&nbsp;or&nbsp;curry&nbsp;sauce.
+                            great aroma creating the ultimate rice dish. Can be served with
+                            raitha&nbsp;or&nbsp;curry&nbsp;sauce.
                         </p>
                     </div>
                 </div>
@@ -189,8 +204,8 @@
         <div class="container">
 
             <div id="grilled" class="row section" data-aos="fade-up">
-                        <h2 class="heading">Grilled Dishes</h2>
-                        <!-- <p class="desctitle">
+                <h2 class="heading">Grilled Dishes</h2>
+                <!-- <p class="desctitle">
                             Rice dishes cooked using Basmati long grain crops originated from Pakistan. Great taste,
                             great aroma creating the ultimate rice dish. Can be served with raitha&nbsp;or&nbsp;curry&nbsp;sauce.
                         </p> -->
@@ -274,12 +289,12 @@
 
             <div id="vegetable" class="row section" data-aos="fade-up">
                 <div class="center">
-                  
-                        <h2 class="heading">Vegetable&nbsp;Mains</h2>
-                        <p class="desctitle">
-                            Also&nbsp;available&nbsp;as&nbsp;a&nbsp;side
-                        </p>
-                  
+
+                    <h2 class="heading">Vegetable&nbsp;Mains</h2>
+                    <p class="desctitle">
+                        Also&nbsp;available&nbsp;as&nbsp;a&nbsp;side
+                    </p>
+
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
@@ -324,8 +339,8 @@
         </div> <?php if( have_rows('childrens') ): ?>
         <div class="container">
             <div id="childrens" class="section" data-aos="fade-up">
-                    <h2 class="heading">Childrens</h2>
-                    <!-- <p class="desctitle">
+                <h2 class="heading">Childrens</h2>
+                <!-- <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
                         food colouring or flavours nor do we include any preservatives in any of our food.
                     </p> -->
@@ -370,8 +385,8 @@
         <?php if( have_rows('drinks') ): ?>
         <div class="container">
             <div id="drinks" class="section" data-aos="fade-up">
-                    <h2 class="heading">Drinks</h2>
-                    <!-- <p class="desctitle">
+                <h2 class="heading">Drinks</h2>
+                <!-- <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
                         food colouring or flavours nor do we include any preservatives in any of our food.
                     </p> -->
@@ -415,12 +430,12 @@
         <?php if( have_rows('accompaniments') ): ?>
         <div class="container">
             <div id="accompaniments" class="row section" data-aos="fade-up">
-                        <h2 class="heading">Accompaniments</h2>
+                <h2 class="heading">Accompaniments</h2>
                 <div class="container">
                     <div class="row justify-content-center">
-                
-                            <div class="menu_list row">
-                                <?php while( have_rows('accompaniments') ): the_row(); 
+
+                        <div class="menu_list row">
+                            <?php while( have_rows('accompaniments') ): the_row(); 
 
                     // vars
                     $foodname = get_sub_field('foodname');
@@ -430,24 +445,24 @@
                     $priceSmall = get_sub_field('pricesmall');
 
                     ?>
-                                <div class="col-lg-6">
-                                    <p class="foodname">
-                                        <span class="span">
-                                            <?php echo $foodname; ?>
-                                            <span class="addinfo">
-                                                <?php echo $addinfo; ?>
-                                            </span></span>
-                                            <?if ($price): ?>
-                                            <span class="price">£&nbsp;<?php echo $price; ?>
-                                            </span>
-                                            <?php endif ?>
-                                    </p>
-                                    <p class="desc">
-                                        <?php echo $desc; ?>
-                                    </p>
-                                </div>
-                                <?php endwhile; ?>
+                            <div class="col-lg-6">
+                                <p class="foodname">
+                                    <span class="span">
+                                        <?php echo $foodname; ?>
+                                        <span class="addinfo">
+                                            <?php echo $addinfo; ?>
+                                        </span></span>
+                                    <?if ($price): ?>
+                                    <span class="price">£&nbsp;<?php echo $price; ?>
+                                    </span>
+                                    <?php endif ?>
+                                </p>
+                                <p class="desc">
+                                    <?php echo $desc; ?>
+                                </p>
                             </div>
+                            <?php endwhile; ?>
+                        </div>
                     </div>
                 </div>
             </div>
