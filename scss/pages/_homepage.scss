@@ -1,4 +1,29 @@
 #home_page {
+    background-color: $brand-blue;
+    background-image: url("../images/shutterstock_791386720 [Converted].svg");
+    background-repeat: repeat;
+    background-size: 90rem;
+
+    .text-box {
+        padding: 6rem;
+
+        h2 {
+            color: $gold;
+            font-size: 3rem;
+            margin-bottom: 5rem;
+            @extend %orpheus-i;
+        }
+
+        p {
+            color: $white;
+            font-size:1.8rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.5rem;
+                padding: 0;
+            }
+        }
+    }
     #hero {
         min-height: 90vh;
         background-color: black;
@@ -16,6 +41,7 @@
         background-size: cover;
         background-attachment: fixed;
         padding-bottom: 4rem;
+        border-bottom: solid .5rem $gold;
 
         // .background {
         //     position: absolute;
@@ -23,7 +49,7 @@
         //     left: 0;
         //     height: 100%;
         //     width: 100%;
-    
+
 
         //     .left-background {
         //         background-image: url("../images/left-header.jpg");
@@ -52,7 +78,8 @@
             width: 100%;
             background-color: rgba($brand-blue, .5);
             z-index: 1;
-            @include media-breakpoint-down(lg){
+
+            @include media-breakpoint-down(lg) {
                 background-color: rgba($brand-blue, .7);
             }
         }
@@ -67,14 +94,16 @@
             position: relative;
             margin: 2rem;
             z-index: 2;
+
             @include media-breakpoint-down(lg) {
                 width: 30rem;
                 height: 30rem;
             }
 
         }
-        .btn-row{
-            @include media-breakpoint-down(lg){
+
+        .btn-row {
+            @include media-breakpoint-down(lg) {
                 display: flex;
                 flex-direction: column;
             }
@@ -103,31 +132,37 @@
     }
 
     #intro {
-        padding: 8rem 0;
-        
-        .center {
-            display: flex;
-            justify-content: center;
 
-            p {
-                color: $gold;
-                text-align: center;
-                font-size: 2.6rem;
-                @include media-breakpoint-down(md){
-                    font-size: 1.5rem;
-                    padding: 0;
-                }
-                span {
-                    font-weight: $p-bold;
-                }
+        figure {
+            background-image: url("../images/shutterstock_117086992.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            position: relative;
+
+            @include media-breakpoint-down(lg) {
+                min-height: 50rem;
             }
+
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: linear-gradient(to right, $brand-blue 20%, transparent 100%);
+            //     top: 0;
+            // }
         }
+
+
 
     }
 
     #about {
 
-        background-color: $gold;
+       
         text-align: left;
 
         .container-fluid {
@@ -138,31 +173,6 @@
             margin: 0;
         }
 
-        .text-box {
-            padding: 14vh 7vw 14vh;
-            background-image: url("../images/shutterstock_791386720 [Converted].svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            h2 {
-                color: $white;
-                font-size: 3rem;
-                margin-bottom: 5rem;
-                @extend %orpheus-i;
-            }
-
-            p {
-                color: $white;
-                font-size: 2.6rem;
-                @include media-breakpoint-down(md){
-                    font-size: 1.5rem;
-                    padding: 0;
-                }
-            }
-        }
-
-
         figure {
             background-image: url("../images/shutterstock_117086992.jpg");
             background-position: center;
@@ -170,8 +180,20 @@
             background-size: cover;
             padding: 0;
             margin: 0;
-            @include media-breakpoint-down(lg){
-                min-height:50rem;
+            position: relative;
+
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            //     background-image: url("../images/shutterstock_791386720 [Converted].svg");
+            //     background: linear-gradient(to left, $brand-blue 20%, transparent 100%);
+            //     top: 0;
+            // }
+
+            @include media-breakpoint-down(lg) {
+                min-height: 50rem;
             }
         }
     }

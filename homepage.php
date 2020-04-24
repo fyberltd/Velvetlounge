@@ -5,7 +5,7 @@
     get_header();
 ?>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
 <div id="home_page">
     <section id="hero">
@@ -20,27 +20,48 @@
         </div>
     </section>
     <article id="intro">
-        <div class="container center">
-            <div class="col-xl-7" data-aos="fade-up">
-                <p><span class="bold">Welcome to Velvet Lounge,</span> a modern and sleek restaurant serving an extraordinary selection of traditional favourites and specialty dishes from many&nbsp;different&nbsp;regions. </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 text-box">
+                    <div data-aos-duration="3000" data-aos="fade-left">
+                        <h2 class="bold">Velvet Lounge </h2>
+                        <p>offers a unique dining experience, that of which can be related to mountainous areas of the
+                            Indian sub-continent. Diners are guaranteed to be amazed with the food, service and the
+                            surroundings. </p>
+                        <p>Our aim is to create an enticing and memorable atmosphere. Velvet Lounge serves South Asian
+                            starters, home style curries and has a fully licensed bar, serving beers, wines and spirits.
+                            Also, traditional desserts are served to complete the dining experience. </p>
+                    </div>
+                </div>
+
+                <figure class="col-xl-6">
+                </figure>
             </div>
         </div>
     </article>
     <article id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-5 text-box" data-aos="fade-right">
-                    <h2>About Velvet Lounge</h2>
-                    <p>
-                        All good Indian Restaurants jealously guard their recipe for the spice blends which make each dish distinctive. The spices are freshly pounded, fried in ghee to bring out their flavour and then combined with other herbs&nbsp;and&nbsp;ingredients.
-                    </p>
-                    <p>
-                        Velvet Lounge offers a rich range of dishes for you to choose from to create the perfect Indian meal.
-                        Some dishes may contain nuts, please ask a member of staff&nbsp;for&nbsp;assistance.
-                    </p>
-                </div>
-                <figure class="col-xl-7"data-aos="fade-left" data-aos-delay="200">
+                <figure class="col-xl-6">
                 </figure>
+                <div class="col-xl-6 text-box">
+                    <div data-aos-duration="3000" data-aos="fade-right">
+                        <h2>About Velvet Lounge</h2>
+                        <p>
+                            All good Indian Restaurants jealously guard their recipe for the spice blends which make
+                            each
+                            dish distinctive. The spices are freshly pounded, fried in ghee to bring out their flavour
+                            and
+                            then combined with other herbs&nbsp;and&nbsp;ingredients.
+                        </p>
+                        <p>
+                            Velvet Lounge offers a rich range of dishes for you to choose from to create the perfect
+                            Indian
+                            meal.
+                            Some dishes may contain nuts, please ask a member of staff&nbsp;for&nbsp;assistance.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </article>

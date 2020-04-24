@@ -96,7 +96,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
 
 
                             <ul class="menu_list">
@@ -148,7 +148,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
 
                             <ul class="menu_list">
                                 <?php while( have_rows('biryani') ): the_row(); 
@@ -189,18 +189,14 @@
         <div class="container">
 
             <div id="grilled" class="row section" data-aos="fade-up">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
                         <h2 class="heading">Grilled Dishes</h2>
-                        <p class="desctitle">
+                        <!-- <p class="desctitle">
                             Rice dishes cooked using Basmati long grain crops originated from Pakistan. Great taste,
                             great aroma creating the ultimate rice dish. Can be served with raitha&nbsp;or&nbsp;curry&nbsp;sauce.
-                        </p>
-                    </div>
-                </div>
+                        </p> -->
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
 
                             <ul class="menu_list">
                                 <?php while( have_rows('grilled') ): the_row(); 
@@ -240,7 +236,7 @@
 
             <div id="famous" class="row section" data-aos="fade-up">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 center">
                         <h2 class="heading">Famous Curry Dishes</h2>
                         <p class="desctitle">
                             Madras, Korma, Rogan Josh, Dhansak, Dopiaza, Pathia, Vindaloo, Balti
@@ -258,7 +254,7 @@
                     $price = get_sub_field('price');
 
                     ?>
-                                <div class="col-lg-4 flex-center">
+                                <div class="col-lg-6 col-xl-4 flex-center">
                                     <p class="foodname">
                                         <?php echo $foodname; ?>
                                         <span class="price">£&nbsp;<?php echo $price; ?>
@@ -277,17 +273,17 @@
         <div class="container">
 
             <div id="vegetable" class="row section" data-aos="fade-up">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
+                <div class="center">
+                  
                         <h2 class="heading">Vegetable&nbsp;Mains</h2>
                         <p class="desctitle">
                             Also&nbsp;available&nbsp;as&nbsp;a&nbsp;side
                         </p>
-                    </div>
+                  
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
                             <ul class="menu_list">
                                 <?php while( have_rows('vegetable') ): the_row(); 
 
@@ -327,17 +323,15 @@
             </div><?php endif; ?>
         </div> <?php if( have_rows('childrens') ): ?>
         <div class="container">
-            <div id="childrens" class="row section" data-aos="fade-up">
-                <div class="col-lg-8">
+            <div id="childrens" class="section" data-aos="fade-up">
                     <h2 class="heading">Childrens</h2>
                     <!-- <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
                         food colouring or flavours nor do we include any preservatives in any of our food.
                     </p> -->
-                </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
 
                             <ul class="menu_list">
                                 <?php while( have_rows('childrens') ): the_row(); 
@@ -375,17 +369,15 @@
         </div> <?php endif; ?>
         <?php if( have_rows('drinks') ): ?>
         <div class="container">
-            <div id="drinks" class="row section" data-aos="fade-up">
-                <div class="col-lg-8">
+            <div id="drinks" class="section" data-aos="fade-up">
                     <h2 class="heading">Drinks</h2>
                     <!-- <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
                         food colouring or flavours nor do we include any preservatives in any of our food.
                     </p> -->
-                </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
+                        <div class="col-lg-10 col-xl-8">
 
 
                             <ul class="menu_list">
@@ -423,15 +415,10 @@
         <?php if( have_rows('accompaniments') ): ?>
         <div class="container">
             <div id="accompaniments" class="row section" data-aos="fade-up">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
                         <h2 class="heading">Accompaniments</h2>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-xl-8">
-
+                
                             <div class="menu_list row">
                                 <?php while( have_rows('accompaniments') ): the_row(); 
 
@@ -461,9 +448,6 @@
                                 </div>
                                 <?php endwhile; ?>
                             </div>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
