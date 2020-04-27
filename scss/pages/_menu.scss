@@ -132,7 +132,7 @@
             flex-wrap: wrap;
             align-items: center;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 justify-content: center;
                 flex-direction: column;
             }
