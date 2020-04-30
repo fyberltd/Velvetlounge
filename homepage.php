@@ -16,7 +16,7 @@
         <h2>Welcome to</h2>
         <div class="logo"></div>
         <div class="btn-row">
-            <a href="" class="button gold-back">Order Online</a><a href="" class="button dark">Reservations</a>
+            <a href="https://velvetlounge.food-now.co.uk/" target="_blank" class="button gold-back">Order Online</a><a href="<?php echo get_page_link(163)?>" class="button dark">Reservations</a>
         </div>
     </section>
     <article id="intro">
@@ -46,7 +46,6 @@
                 </figure>
                 <div class="col-xl-6 text-box">
                     <div data-aos-duration="3000" data-aos="fade-right">
-                        <h2>About Velvet Lounge</h2>
                         <p>
                             All good Indian Restaurants jealously guard their recipe for the spice blends which make
                             each

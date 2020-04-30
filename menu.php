@@ -27,7 +27,7 @@
                 <?php endif; ?>
                 <?php if( have_rows('vegetable') ): ?><li><a class="quicknav" href="#vegetable">Vegetables</a></li>
                 <?php endif; ?>
-                <?php if( have_rows('childrens') ): ?><li><a class="quicknav" href="#children">Childrens</a></li>
+                <?php if( have_rows('childrens') ): ?><li><a class="quicknav" href="#childrens">Childrens</a></li>
                 <?php endif; ?>
                 <?php if( have_rows('drinks') ): ?><li><a class="quicknav" href="#drinks">Drinks</a></li>
                 <?php endif; ?>
@@ -356,6 +356,7 @@
                     $addinfo = get_sub_field('allergen-aditional-information');
                     $desc = get_sub_field('desc');
                     $price = get_sub_field('price');
+                    $priceLarge = get_sub_field('price_large');
 
                     ?>
                                 <li>
@@ -366,7 +367,9 @@
                                                 <?php echo $addinfo; ?>
                                             </span></p>
                                         <?if ($price): ?>
-                                        <p class="price">£&nbsp;<?php echo $price; ?>
+                                        <p class="price"><span
+                                                class="price-child-small">Small</span>&nbsp;£&nbsp;<?php echo $price; ?>
+                                            <span class="price">Large</span>&nbsp;£&nbsp;<?php echo $priceLarge; ?>
                                         </p>
                                         <?php endif ?>
                                     </div>
@@ -384,8 +387,8 @@
         </div> <?php endif; ?>
         <?php if( have_rows('drinks') ): ?>
         <div class="container">
-            <div id="drinks" class="section" data-aos="fade-up">
-                <h2 class="heading">Drinks</h2>
+            <div id="drinks" class="section drink" data-aos="fade-up">
+                <h2 class="heading">Soft Drinks</h2>
                 <!-- <p class="desctitle">
                         All our food is cooked using fresh spices and ingredients. We do not use any artificial
                         food colouring or flavours nor do we include any preservatives in any of our food.
@@ -395,7 +398,7 @@
                         <div class="col-lg-10 col-xl-8">
 
 
-                            <ul class="menu_list">
+                            <div class="menu_list row">
                                 <?php while( have_rows('drinks') ): the_row(); 
 
                     // vars
@@ -405,19 +408,333 @@
                     $price = get_sub_field('price');
 
                     ?>
-                                <li>
-                                    <p class="foodname">
-                                        <span>
+                                <div class="col-xl-6">
+                                    <div class="foodname">
+                                        <p>
                                             <?php echo $foodname; ?>
-                                            <?if ($price): ?>
-                                            <span class="price">£&nbsp;<?php echo $price; ?>
-                                            </span>
-                                            <?php endif ?>
-                                    </p>
+                                            <span class="addinfo">
+                                                <?php echo $addinfo; ?>
+                                            </span></p>
+                                        <?if ($price): ?>
+                                        <p class="price">
+                                            £&nbsp;<?php echo $price; ?>
+                                        </p>
+                                        <?php endif ?>
+                                    </div>
                                     <p class="desc">
                                         <?php echo $desc; ?>
                                     </p>
+                                    </div>
+                                <?php endwhile; ?>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+
+        <?php if( have_rows('red_wine') ): ?>
+        <div class="container">
+            <div class="section drink" data-aos="fade-up">
+                <h2 class="heading">Red Wine</h2>
+                <!-- <p class="desctitle">
+                        All our food is cooked using fresh spices and ingredients. We do not use any artificial
+                        food colouring or flavours nor do we include any preservatives in any of our food.
+                    </p> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <ul class="menu_list">
+                                <?php while( have_rows('red_wine') ): the_row(); 
+
+                    // vars
+                    $name = get_sub_field('name');
+                    $desc = get_sub_field('desc');
+
+                    ?>
+                                <li>
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo $desc; ?>
+                                        </p>
+                                    </div>
+                                    <?php if( have_rows('price') ): ?>
+                                    <div>
+                                        <?php while( have_rows('price') ): the_row();
+                            $price = get_sub_field('price');
+                            $size= get_sub_field('size')
+                            ?><div class="flex-end">
+                                            <p class="price">£&nbsp;<?php echo $price; ?></p>
+                                            <p><?= $size; ?></p>
+                                        </div>
+
+                                        <?php
+                                            endwhile;?>
+                                    </div>
+                                    <?php endif; ?>
                                 </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <?php if( have_rows('white_wine') ): ?>
+        <div class="container">
+            <div class="section drink" data-aos="fade-up">
+                <h2 class="heading">White Wine</h2>
+                <!-- <p class="desctitle">
+                        All our food is cooked using fresh spices and ingWhiteients. We do not use any artificial
+                        food colouring or flavours nor do we include any preservatives in any of our food.
+                    </p> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <ul class="menu_list">
+                                <?php while( have_rows('white_wine') ): the_row(); 
+
+                    // vars
+                    $name = get_sub_field('name');
+                    $desc = get_sub_field('desc');
+
+                    ?>
+                                <li>
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo $desc; ?>
+                                        </p>
+                                    </div>
+                                    <?php if( have_rows('price') ): ?>
+                                    <div>
+                                        <?php while( have_rows('price') ): the_row();
+                            $price = get_sub_field('price');
+                            $size= get_sub_field('size')
+                            ?><div class="flex-end">
+                                            <p class="price">£&nbsp;<?php echo $price; ?></p>
+                                            <p><?= $size; ?></p>
+                                        </div>
+
+                                        <?php
+                                            endwhile;?>
+                                    </div>
+                                    <?php endif; ?>
+                                </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <?php endif; ?>
+        <?php if( have_rows('rose_wine') ): ?>
+        <div class="container">
+            <div class="section drink" data-aos="fade-up">
+                <h2 class="heading">Rosé Wine</h2>
+                <!-- <p class="desctitle">
+                        All our food is cooked using fresh spices and ingroseients. We do not use any artificial
+                        food colouring or flavours nor do we include any preservatives in any of our food.
+                    </p> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                     
+                        <div class="col-lg-10 col-xl-8">
+                            <ul class="menu_list">
+                                <?php while( have_rows('rose_wine') ): the_row(); 
+
+                    // vars
+                    $name = get_sub_field('name');
+                    $desc = get_sub_field('desc');
+
+                    ?>
+                                <li>
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo $desc; ?>
+                                        </p>
+                                    </div>
+                                    <?php if( have_rows('price') ): ?>
+                                    <div>
+                                        <?php while( have_rows('price') ): the_row();
+                            $price = get_sub_field('price');
+                            $size= get_sub_field('size')
+                            ?><div class="flex-end">
+                                            <p class="price">£&nbsp;<?php echo $price; ?></p>
+                                            <p><?= $size; ?></p>
+                                        </div>
+
+                                        <?php
+                                            endwhile;?>
+                                    </div>
+                                    <?php endif; ?>
+                                </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <?php if( have_rows('beer') ): ?>
+        <div class="container">
+            <div class="section drink" data-aos="fade-up">
+                <h2 class="heading">Champagne & Sparkling </h2>
+                <!-- <p class="desctitle">
+                        All our food is cooked using fresh spices and ingroseients. We do not use any artificial
+                        food colouring or flavours nor do we include any preservatives in any of our food.
+                    </p> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <?php if( have_rows('champagne_sparkling') ): ?>
+                        <div class="col-lg-10 col-xl-8">
+                            <ul class="menu_list">
+                                <?php while( have_rows('champagne_sparkling') ): the_row(); 
+
+                    // vars
+                    $name = get_sub_field('name');
+                    $desc = get_sub_field('desc');
+
+                    ?>
+                                <li>
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo $desc; ?>
+                                        </p>
+                                    </div>
+                                    <?php if( have_rows('price') ): ?>
+                                    <div>
+                                        <?php while( have_rows('price') ): the_row();
+                            $price = get_sub_field('price');
+                            $size= get_sub_field('size')
+                            ?><div class="flex-end">
+                                            <p class="price">£&nbsp;<?php echo $price; ?></p>
+                                            <p><?= $size; ?></p>
+                                        </div>
+
+                                        <?php
+                                            endwhile;?>
+                                    </div>
+                                    <?php endif; ?>
+                                </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section drink" data-aos="fade-up">
+                <h2 class="heading">Beers & Ciders </h2>
+                <!-- <p class="desctitle">
+                        All our food is cooked using fresh spices and ingroseients. We do not use any artificial
+                        food colouring or flavours nor do we include any preservatives in any of our food.
+                    </p> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+              
+                        <div class="col-lg-10 col-xl-8">
+                            <ul class="menu_list">
+                                <?php while( have_rows('beer') ): the_row(); 
+
+                    // vars
+                    $name = get_sub_field('name');
+                    $desc = get_sub_field('desc');
+
+                    ?>
+                                <li>
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $name; ?>
+                                        </p>
+                                        <p class="desc">
+                                            <?php echo $desc; ?>
+                                        </p>
+                                    </div>
+                                    <?php if( have_rows('price') ): ?>
+                                    <div>
+                                        <?php while( have_rows('price') ): the_row();
+                            $price = get_sub_field('price');
+                            $size= get_sub_field('size')
+                            ?><div class="flex-end">
+                                            <p class="price">£&nbsp;<?php echo $price; ?></p>
+                                            <p><?= $size; ?></p>
+                                        </div>
+
+                                        <?php
+                                            endwhile;?>
+                                    </div>
+                                    <?php endif; ?>
+                                </li>
+                                <?php endwhile; ?>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+        <?php if( have_rows('spirits') ): ?>
+        <div class="container">
+            <div id="drinks" class="section drink" data-aos="fade-up">
+                <h2 class="heading">Spirits</h2>
+                <p class="desctitle">
+                        Add a mixer for £&nbsp;<?php echo get_field('mixer_price');?>
+                    </p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+
+
+                            <div class="menu_list row">
+                                <?php while( have_rows('spirits') ): the_row(); 
+
+                    // vars
+                    $foodname = get_sub_field('foodname');
+                    $addinfo = get_sub_field('allergen-aditional-information');
+                    $desc = get_sub_field('desc');
+                    $price = get_sub_field('price');
+
+                    ?>
+                                <div class="width">
+                                    <div class="foodname">
+                                        <p>
+                                            <?php echo $foodname; ?>
+                                            <span class="addinfo">
+                                                <?php echo $addinfo; ?>
+                                            </span></p>
+                                        <?if ($price): ?>
+                                        <p class="price">
+                                            £&nbsp;<?php echo $price; ?>
+                                        </p>
+                                        <?php endif ?>
+                                    </div>
+                                    <p class="desc">
+                                        <?php echo $desc; ?>
+                                    </p>
+                                    </div>
                                 <?php endwhile; ?>
                             </ul>
 
@@ -470,8 +787,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 flex-col-lg-center">
                     <div class="logo"></div>
-                    <h2 class="heading">(G) - Gluten (V) - Vegetarian
-                        (D) - Dairy (VE) - Vegan</h2>
+                    <h2 class="heading">(G)&nbsp;-&nbsp;Gluten (V)&nbsp;-&nbsp;Vegetarian
+                        (D)&nbsp;-&nbsp;Dairy (VE)&nbsp;-&nbsp;Vegan</h2>
                     <p>
                         Allergens Information: We do not use nuts in any of our curries. We do however use
                         Coconut Powder in our Peshwari Nan can be found in our desserts. Also some of our

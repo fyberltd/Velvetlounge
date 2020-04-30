@@ -87,6 +87,14 @@
         }
     }
 
+    .flex-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .width {
+        width: 100%;
+    }
 
     #food-links {
         background-color: $gold;
@@ -165,6 +173,13 @@
         }
     }
 
+    .price {
+        font-family: orpheuspro, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.4rem;
+    }
+
     #food_menu {
         position: relative;
         padding-bottom: 6rem;
@@ -200,6 +215,56 @@
             border: solid $gold 0.2rem;
             display: flex;
             justify-content: center;
+
+            &.drink {
+                flex-direction: column;
+
+                span {
+                    &.price {
+                        color: $white;
+                        background-color: $gold;
+                        padding: 0 1rem;
+                        font-size: 2rem;
+                    }
+
+                    &.price-child-small {
+                        color: $white;
+                        background-color: black;
+                        padding: 0 1rem;
+                        font-size: 2rem;
+                    }
+
+                }
+
+                .menu_list .foodname p {
+                    min-width: 30rem;
+
+                    &.desc {
+                        font-size: 1.6rem
+                    }
+                }
+            }
+
+            &#childrens {
+                flex-direction: column;
+
+                span {
+                    &.price {
+                        color: $white;
+                        background-color: $gold;
+                        padding: 0 1rem;
+                        font-size: 2rem;
+                    }
+
+                    &.price-child-small {
+                        color: $white;
+                        background-color: black;
+                        padding: 0 1rem;
+                        font-size: 2rem;
+                    }
+
+                }
+            }
 
             @include media-breakpoint-down(md) {
                 padding: 0;
