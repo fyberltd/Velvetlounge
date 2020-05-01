@@ -409,7 +409,7 @@
 
                     ?>
                                 <div class="col-xl-6">
-                                    <div class="foodname">
+                                    <div class="foodname soft-drink">
                                         <p>
                                             <?php echo $foodname; ?>
                                             <span class="addinfo">
@@ -539,7 +539,7 @@
         </div>
         
         <?php endif; ?>
-        <?php if( have_rows('rose_wine') ): ?>
+        <?php if( have_rows('rose') ): ?>
         <div class="container">
             <div class="section drink" data-aos="fade-up">
                 <h2 class="heading">Rosé Wine</h2>
@@ -552,7 +552,7 @@
                      
                         <div class="col-lg-10 col-xl-8">
                             <ul class="menu_list">
-                                <?php while( have_rows('rose_wine') ): the_row(); 
+                                <?php while( have_rows('rose') ): the_row(); 
 
                     // vars
                     $name = get_sub_field('name');

@@ -96,6 +96,13 @@
         width: 100%;
     }
 
+    .flex-col-lg-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:3rem 0;
+    }
+
     #food-links {
         background-color: $gold;
 
@@ -237,16 +244,38 @@
                 }
 
                 .menu_list .foodname p {
-                    min-width: 30rem;
+                    min-width: 25rem;
+
+                    @include media-breakpoint-down(md) {
+                        min-width: unset;
+                    }
 
                     &.desc {
-                        font-size: 1.6rem
+                        font-size: 1.6rem;
+                        text-align: right;
+
+                        @include media-breakpoint-down(md) {
+                            text-align: left;
+                            min-width: 100%;
+                        }
                     }
+                }
+
+                .menu_list .soft-drink p {
+                    min-width: unset;
                 }
             }
 
             &#childrens {
                 flex-direction: column;
+
+                .price {
+                    display: flex;
+
+                    @include media-breakpoint-down(md) {
+                        display: unset;
+                    }
+                }
 
                 span {
                     &.price {
@@ -254,6 +283,8 @@
                         background-color: $gold;
                         padding: 0 1rem;
                         font-size: 2rem;
+                        height: 3rem;
+                        margin-left: .5rem;
                     }
 
                     &.price-child-small {
@@ -261,6 +292,7 @@
                         background-color: black;
                         padding: 0 1rem;
                         font-size: 2rem;
+                        height: 3rem;
                     }
 
                 }
