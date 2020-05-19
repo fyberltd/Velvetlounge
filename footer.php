@@ -4,7 +4,8 @@
         <div class="row">
             <div class="col-lg-4 col-xl-2 offset-lg-1 flex-center">
                 <a href="<?php echo get_home_url(); ?>" class="logo">
-                    <img src="<?php echo bloginfo('template_directory'); ?>/images/PNG/velvet lounge logo_white.png" alt="logo">
+                    <img src="<?php echo bloginfo('template_directory'); ?>/images/PNG/velvet lounge logo_white.png"
+                        alt="logo">
                 </a>
             </div>
         </div>
@@ -28,21 +29,22 @@
                 <?php wp_nav_menu( array('theme_location' => 'footer_nav', 'container_id' => 'footer_nav') ); ?>
             </nav>
             <div class="col-lg-3 col-xl-2 social-row flex-center">
-                <a href="" class="facebook"></a>
-                <a href="" class="instagram"></a>
+                <a href="https://www.facebook.com/velvetloungemirfield/" target="_blank" class="facebook"></a>
+                <a href="https://www.instagram.com/velvetlounge_mirfield/" target="_blank" class="instagram"></a>
             </div>
         </div>
         <div id="bottom_bar">
-            <p><a href="#">Privacy Policy</a> - <a href="#">Cookies Policy</a></p>
-            <p>&copy; 2020 Velvet Lounge - Website by <a target="_blank"href="https://fyber.co.uk">Fyber</a></p>
+            <!-- <p><a href="#">Privacy Policy</a> - <a href="#">Cookies Policy</a></p> -->
+            <p>&copy; 2020 Velvet Lounge - Website by <a target="_blank" href="https://fyber.co.uk">Fyber</a></p>
         </div>
     </div>
 </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+<script>
     AOS.init();
-  </script>
-<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</script>
+<script src="//instant.page/1.2.2" type="module"
+    integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
 <?php wp_footer(); ?>
 </body>
 

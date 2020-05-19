@@ -9,9 +9,11 @@
         min-height: 50rem;
         display: flex;
         align-items: center;
+
         @include media-breakpoint-down(md) {
             padding: 4rem 2rem;
         }
+
         h2 {
             color: $gold;
             font-size: 3rem;
@@ -21,7 +23,7 @@
 
         p {
             color: $white;
-            font-size:1.8rem;
+            font-size: 1.8rem;
 
             @include media-breakpoint-down(md) {
                 font-size: 1.5rem;
@@ -29,6 +31,7 @@
             }
         }
     }
+
     #hero {
         min-height: 90vh;
         background-color: black;
@@ -81,7 +84,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba($brand-blue, .5);
+            background-color: rgba($brand-blue, .6);
             z-index: 1;
 
             @include media-breakpoint-down(lg) {
@@ -99,12 +102,24 @@
             position: relative;
             margin: 2rem;
             z-index: 2;
+            margin-bottom: 0;
 
             @include media-breakpoint-down(lg) {
                 width: 30rem;
                 height: 30rem;
             }
 
+        }
+
+        .white-text {
+            color: $white;
+            text-align: center;
+            padding-top: 0;
+            padding-bottom: 4rem;
+
+            @include media-breakpoint-down(lg) {
+                padding-bottom: 2rem;
+            }
         }
 
         .btn-row {
@@ -139,7 +154,7 @@
     #intro {
 
         figure {
-            
+
             background-image: url("../images/shutterstock_124075147.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -168,7 +183,7 @@
 
     #about {
 
-       
+
         text-align: left;
 
         .container-fluid {
@@ -177,7 +192,8 @@
 
         .row {
             margin: 0;
-            @include media-breakpoint-down(lg){
+
+            @include media-breakpoint-down(lg) {
                 flex-direction: column-reverse;
             }
         }

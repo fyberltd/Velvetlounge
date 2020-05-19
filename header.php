@@ -16,7 +16,8 @@
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
-                        "background": "#201e32"
+                        "background": "#201e32",
+                        "max-width": "100vw"
                     },
                     "button": {
                         "background": "transparent",
@@ -27,7 +28,20 @@
             })
         });
     </script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165623129-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165623129-1');
+    </script>
+
+
     <?php wp_head(); ?>
 </head>
 <!-- https://cookieconsent.osano.com/download/ -->
@@ -46,8 +60,8 @@
                     <?php wp_nav_menu( array('theme_location' => 'header_nav', 'container_id' => 'header_nav') ); ?>
                 </nav>
                 <div class="social-row">
-                    <a href="" class="facebook"></a>
-                    <a href="" class="instagram"></a>
+                    <a href="https://www.facebook.com/velvetloungemirfield/" target="_blank" class="facebook"></a>
+                    <a href="https://www.instagram.com/velvetlounge_mirfield/" target="_blank" class="instagram"></a>
                 </div>
             </div>
         </div>
