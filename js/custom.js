@@ -112,48 +112,59 @@ jQuery(document).ready(function ($) {
 			option = 'added';
 
 			$('#time select option[value="16:30"]').remove();
+			$('#time select option[value="17:00"]').remove();
+			$('#time select option[value="17:30"]').remove();
 			$('#time select option[value="18:00"]').remove();
+			$('#time select option[value="18:30"]').remove();
+			$('#time select option[value="19:00"]').remove();
+			$('#time select option[value="19:30"]').remove();
 			$('#time select option[value="20:00"]').remove();
+			$('#time select option[value="20:30"]').remove();
+			$('#time select option[value="21:00"]').remove();
+			$('#time select option[value="21:30"]').remove();
+			$('#time select option[value="22:00"]').remove();
+			$('#time select option[value="22:30"]').remove();
+
 
 			// select.append( $("<option></option>")
 			// 		.attr("value", '16:30')
 			// 		.text('16:30') ); 
-			select.append($("<option></option>")
-				.attr("value", '17:00')
-				.text('17:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '17:00')
+			// 	.text('17:00'));
 			select.append($("<option></option>")
 				.attr("value", '17:30')
 				.text('17:30'));
-			select.append($("<option></option>")
-				.attr("value", '18:00')
-				.text('18:00'));
-			select.append($("<option></option>")
-				.attr("value", '18:30')
-				.text('18:30'));
-			select.append($("<option></option>")
-				.attr("value", '19:00')
-				.text('19:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '18:00')
+			// 	.text('18:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '18:30')
+			// 	.text('18:30'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '19:00')
+			// 	.text('19:00'));
 			select.append($("<option></option>")
 				.attr("value", '19:30')
 				.text('19:30'));
-			select.append($("<option></option>")
-				.attr("value", '20:00')
-				.text('20:00'));
-			select.append($("<option></option>")
-				.attr("value", '20:30')
-				.text('20:30'));
-			select.append($("<option></option>")
-				.attr("value", '21:00')
-				.text('21:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '20:00')
+			// 	.text('20:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '20:30')
+			// 	.text('20:30'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '21:00')
+			// 	.text('21:00'));
 			select.append($("<option></option>")
 				.attr("value", '21:30')
 				.text('21:30'));
-			select.append($("<option></option>")
-				.attr("value", '22:00')
-				.text('22:00'));
-			select.append($("<option></option>")
-				.attr("value", '22:30')
-				.text('22:30'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '22:00')
+			// 	.text('22:00'));
+			// select.append($("<option></option>")
+			// 	.attr("value", '22:30')
+			// 	.text('22:30'));
 		}
 	}
 	if ($('#food-links').length) {
