@@ -15,7 +15,7 @@
         </div> -->
         <h2>Welcome to</h2>
         <div class="logo"></div>
-        <p class="white-text">10&#x25; discount on all&nbsp;online&nbsp;orders</p>
+        <!-- <p class="white-text">10&#x25; discount on all&nbsp;online&nbsp;orders</p> -->
         <div class="btn-row">
             <a href="https://velvetlounge.food-now.co.uk/" target="_blank" class="button gold-back">Order Online</a><a href="<?php echo get_page_link(163)?>" class="button dark">Reservations</a>
         </div>
