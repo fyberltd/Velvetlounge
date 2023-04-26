@@ -13,7 +13,7 @@
             <div class="col-7 left-background"></div>
             <div class="col-5 right-background"></div>
         </div> -->
-        <h2>Welcome to</h2>
+        <h2>Discover the Best of Modern Indian Cuisine in Mirfield, at Velvet Lounge</h2>
         <div class="logo"></div>
         <!-- <p class="white-text">10&#x25; discount on all&nbsp;online&nbsp;orders</p> -->
         <div class="btn-row">
@@ -65,6 +65,22 @@
             </div>
         </div>
     </article>
+        <!-- <article id="cocktails">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 text-box">
+                    <div data-aos-duration="3000" data-aos="fade-left">
+                        <h2 class="bold">Handcrafted Cocktails at Velvet Lounge</h2>
+                        <p>Indulge in the vibrant flavours of modern Indian cuisine while sipping on a refreshing cocktail at Velvet Lounge. Our bar boasts over 14 cocktails, including mocktails, carefully crafted to perfectly complement your dining experience. From classic favourites to inventive new blends, there's a drink for every taste. Join us for a memorable evening of exceptional food and drink!</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <figure class="col-xl-6">
+                </figure>
+            </div>
+        </div>
+    </article> -->
 </div>
 <?php
     get_footer();
