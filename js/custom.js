@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {		
 	//animate on scroll
 	AOS.init();
 
@@ -83,6 +83,25 @@ jQuery(document).ready(function ($) {
 		var select = $('#time select');
 		console.log(date.getDay());
 
+		// var mothersDay = new Date(date_str[2], 2, 10); // March is month 2 (zero-based)
+
+		// if (date.getTime() === mothersDay.getTime()) {
+		// 	// It's Mother's Day, change times available from 17:00 to 15:00
+		// 	option = 'modified for Mother\'s Day';
+	
+		// 	// Remove existing options
+		// 	$('#time select option').each(function() {
+		// 		if ($(this).val() >= '17:00') {
+		// 			$(this).remove();
+		// 		}
+		// 	});
+	
+		// 	// Add new time slots for Mother's Day
+		// 	select.append($('<option></option>').attr('value', '15:00').text('15:00'));
+		// 	select.append($('<option></option>').attr('value', '15:30').text('15:30'));
+		// 	// Add any other time slots as needed
+			
+
 		if (date_str[0] === '22' && date_str[1] === '03') {
 			option = 'removed';
 
@@ -96,6 +115,7 @@ jQuery(document).ready(function ($) {
 			$('#time select option[value="21:30"]').remove();
 			$('#time select option[value="22:00"]').remove();
 			$('#time select option[value="22:30"]').remove();
+
 		} else if (date_str[0] === '21' && date_str[1] === '06') {
 			option = 'removed';
 
@@ -111,7 +131,6 @@ jQuery(document).ready(function ($) {
 			$('#time select option[value="22:30"]').remove();
 		} else if (date_str[0] === '31' && date_str[1] === '08') {
 			option = 'removed';
-
 			$('#time select option[value="17:00"]').remove();
 			$('#time select option[value="17:30"]').remove();
 			$('#time select option[value="18:30"]').remove();
@@ -138,7 +157,6 @@ jQuery(document).ready(function ($) {
 		} else if (date.getDay() === 1) { //monday
 			option = 'removed';
 			$('#time select option[value=""]').remove();
-
 			$('#time select option[value="16:30"]').remove();
 			$('#time select option[value="17:00"]').remove();
 			$('#time select option[value="17:30"]').remove();
@@ -291,6 +309,29 @@ jQuery(document).ready(function ($) {
 				.attr("value", time)
 				.text(time));
 			  }
+
+			  if (date_str[0] === '10' && date_str[1] === '03') {
+				option = 'removed';
+				$('#time select option[value="15:00"]').remove();
+				$('#time select option[value="17:00"]').remove();
+				$('#time select option[value="17:30"]').remove();
+				$('#time select option[value="18:30"]').remove();
+				$('#time select option[value="19:00"]').remove();
+				$('#time select option[value="19:30"]').remove();
+				$('#time select option[value="20:30"]').remove();
+				$('#time select option[value="21:00"]').remove();
+				$('#time select option[value="21:30"]').remove();
+				$('#time select option[value="22:00"]').remove();
+				$('#time select option[value="22:30"]').remove();
+				select.append($("<option></option>").attr("value", '15:00').text('15:00'));
+				for (let i = 0; i < sunday.length; i++) {
+					let time = sunday[i];
+					select.append($("<option></option>")
+					.attr("value", time)
+					.text(time));
+				  }
+				//   $('#time select option[value="17:00"]').remove();
+			}
 		} else {
 			option = 'added';
 			$('#time select option[value=""]').remove();

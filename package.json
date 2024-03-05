@@ -19,13 +19,14 @@
     "gulp-js-minify": "latest",
     "gulp-plumber": "latest",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "latest",
+    "gulp-sass": "5.1.0",
     "gulp-sequence": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-terser": "latest"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.4.1",
+    "sass": "^1.71.1"
   },
   "description": ""
 }

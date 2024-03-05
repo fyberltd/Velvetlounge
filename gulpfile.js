@@ -1,5 +1,7 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sassCompiler = require('sass');
+var gulpSass = require('gulp-sass');
+var sass = gulpSass(sassCompiler);
 var cleanCss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var terser = require('gulp-terser');
@@ -38,7 +40,7 @@ gulp.task('css', function() {
 
 //create sourcemaps, compile into one file, minify
 gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.js', 'app/js/**/*.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.js', 'js/**/*.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
         .pipe(terser())
@@ -51,7 +53,7 @@ gulp.task('js', function() {
 
 //copy php files to app
 gulp.task('phpPush', function() {
-    return gulp.src('app/*.php')
+    return gulp.src('*.php')
         .pipe(plumber({
             errorHandler: onError
         }))
@@ -59,22 +61,22 @@ gulp.task('phpPush', function() {
 });
 
 gulp.task('imageMin', function() {
-    return gulp.src('app/images/**/*')
+    return gulp.src('images/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('velvet theme/images'));
 });
 
 gulp.task('imagePush', function() {
-    return gulp.src('app/images/*')
+    return gulp.src('images/*')
         .pipe(gulp.dest('velvet theme/images'));
 });
 
 //run functions on file save
 gulp.task('watch', function() {
-    gulp.watch('app/scss/**/*.scss', gulp.series('css'));
-    gulp.watch('app/*.php', gulp.series('phpPush'));
-    gulp.watch('app/js/**/*.js', gulp.series('js'));
-    gulp.watch('app/images/**/*', gulp.series('imagePush'));
+    gulp.watch('scss/**/*.scss', gulp.series('css'));
+    gulp.watch('*.php', gulp.series('phpPush'));
+    gulp.watch('js/**/*.js', gulp.series('js'));
+    gulp.watch('images/**/*', gulp.series('imagePush'));
     return;
 });
 
